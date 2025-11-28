@@ -100,19 +100,9 @@ export const SERVICES: ServiceItem[] = [
     tags: ["Reels & TikToks", "Animação de Logo", "Vinhetas", "Edição Promocional"]
   },
   {
-    title: "Design Editorial & Print",
-    description: "Diagramação e layout para materiais impressos e digitais de alta complexidade. Organização visual da informação com foco na legibilidade e hierarquia.",
-    tags: ["Revistas e Catálogos", "Flyers e Folders", "Apresentações", "Materiais de PDV"]
-  },
-  {
     title: "Publicidade & Propaganda",
     description: "Concepção visual para campanhas publicitárias (Key Visuals). Direção de arte para lançamentos de produtos, eventos e promoções sazonais.",
     tags: ["Key Visuals", "Outdoors", "Banners Digitais", "Direção de Arte"]
-  },
-  {
-    title: "Web Design & UI",
-    description: "Criação de interfaces digitais limpas e intuitivas. Foco na experiência do usuário e na arquitetura da informação para sites e landing pages.",
-    tags: ["Landing Pages", "Prototipagem", "Design de Interfaces", "Banners Web"]
   }
 ];
 

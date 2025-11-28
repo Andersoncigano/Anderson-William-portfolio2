@@ -11,13 +11,19 @@ const Skills: React.FC = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {SKILLS.map((cat, index) => (
-            <div key={index} className="flex flex-col h-full">
-              <h4 className="text-sm font-extrabold uppercase mb-5 tracking-wide px-3 py-1.5 self-start">
+            <div 
+              key={index} 
+              className="group flex flex-col h-full p-5 -mx-5 rounded-2xl transition-all duration-500 hover:bg-black hover:shadow-2xl cursor-default"
+            >
+              <h4 className="text-sm font-extrabold uppercase mb-5 tracking-wide px-3 py-1.5 self-start transition-all duration-500 group-hover:text-white group-hover:bg-white/10 rounded-md">
                 {cat.title}
               </h4>
               <ul className="space-y-3">
                 {cat.skills.map((skill, i) => (
-                  <li key={i} className="text-xs border-b border-gray-300 pb-1.5 last:border-0">
+                  <li 
+                    key={i} 
+                    className="text-xs border-b border-gray-300 pb-1.5 last:border-0 transition-colors duration-500 group-hover:text-gray-300 group-hover:border-gray-700"
+                  >
                     {skill}
                   </li>
                 ))}
