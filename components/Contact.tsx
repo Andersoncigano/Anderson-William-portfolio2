@@ -1,5 +1,6 @@
+
 import React from 'react';
-import { Mail, Linkedin, Instagram, Phone } from 'lucide-react';
+import { Mail, Linkedin, Github, Phone } from 'lucide-react';
 import { PERSONAL_INFO } from '../constants';
 
 const Contact: React.FC = () => {
@@ -15,7 +16,7 @@ const Contact: React.FC = () => {
 
         <a 
           href={`mailto:${PERSONAL_INFO.email}`}
-          className="inline-flex items-center gap-2 text-base md:text-lg font-bold hover:text-red-600 transition-all duration-300 mb-14 hover:tracking-widest"
+          className="inline-flex items-center gap-2 text-base md:text-lg font-bold transition-all duration-300 mb-14 hover:tracking-widest"
         >
           <Mail className="w-4 h-4 md:w-5 md:h-5" />
           {PERSONAL_INFO.email}
@@ -36,9 +37,9 @@ const Contact: React.FC = () => {
           />
           <SocialLink 
             href="#" 
-            icon={<Instagram size={24} />} 
-            label="Instagram" 
-            color="hover:text-[#E4405F]"
+            icon={<Github size={24} />} 
+            label="Github" 
+            color="hover:text-black"
           />
           <SocialLink 
             href="https://behance.net" 
