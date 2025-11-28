@@ -3,11 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light">
     <title>Anderson William | Senior Designer</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <script>
       tailwind.config = {
+        darkMode: 'class', // Desabilita dark mode automático
         theme: {
           extend: {
             fontFamily: {
@@ -22,23 +24,29 @@
       }
     </script>
     <style>
+      /* Força o tema claro independentemente da preferência do sistema */
+      :root {
+        color-scheme: light;
+      }
       body {
-        background-color: #F9FAFB;
-        color: #050505;
+        background-color: #F9FAFB !important;
+        color: #050505 !important;
         font-family: 'Inter', sans-serif;
       }
       /* Smooth scrolling for anchor links */
       html {
         scroll-behavior: smooth;
+        background-color: #F9FAFB;
       }
     </style>
   <script type="importmap">
 {
   "imports": {
-    "react": "https://aistudiocdn.com/react@^19.2.0",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-    "react/": "https://aistudiocdn.com/react@^19.2.0/",
-    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0"
+    "react": "https://esm.sh/react@18.3.1",
+    "react-dom/client": "https://esm.sh/react-dom@18.3.1/client",
+    "react/": "https://esm.sh/react@18.3.1/",
+    "lucide-react": "https://esm.sh/lucide-react@0.378.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
   }
 }
 </script>
