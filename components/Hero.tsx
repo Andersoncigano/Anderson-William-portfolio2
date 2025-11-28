@@ -31,7 +31,7 @@ const Hero: React.FC = () => {
           src={imgSrc} 
           onError={handleImageError}
           alt={PERSONAL_INFO.name} 
-          className="w-full h-full object-cover object-top grayscale transition-opacity duration-500 translate-y-4 md:translate-y-8"
+          className="w-full h-[90%] object-contain object-bottom grayscale transition-opacity duration-500"
         />
         {/* Subtle gradient overlay at bottom to blend cutout if needed */}
         <div className="absolute inset-0 bg-gradient-to-t from-gray-50/20 to-transparent mix-blend-overlay pointer-events-none"></div>
