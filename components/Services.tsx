@@ -43,7 +43,7 @@ const Services: React.FC = () => {
         
         {/* Header com animação de entrada */}
         <div className={`transition-all duration-700 ease-out transform ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <h3 className="text-xl font-bold uppercase tracking-tighter mb-14 bg-black text-white px-5 py-1.5 inline-block border-2 border-black cursor-default">
+          <h3 className="text-xl font-bold uppercase tracking-tighter mb-14 bg-black text-white px-5 py-1.5 inline-block border-2 border-black transition-all duration-300 hover:bg-white hover:text-black hover:tracking-widest cursor-default">
             Serviços
           </h3>
         </div>
@@ -86,7 +86,7 @@ const Services: React.FC = () => {
                   {service.tags.map((tag, i) => (
                     <li 
                       key={i} 
-                      className="text-[10px] uppercase font-semibold text-gray-400 border-b border-gray-200 pb-1 last:border-0 block transition-all duration-300 group-hover:border-gray-300 group-hover:text-gray-500"
+                      className="text-[10px] uppercase font-semibold text-gray-400 border-b border-gray-200 pb-1 last:border-0 block transition-all duration-300 group-hover:border-gray-300 group-hover:text-gray-500 hover:text-black hover:font-black cursor-default"
                     >
                       {tag}
                     </li>
