@@ -1,7 +1,20 @@
 import React from 'react';
 import { SKILLS } from '../constants';
+import { PenTool, Video, Bot } from 'lucide-react';
 
 const Skills: React.FC = () => {
+
+  const getSkillIcon = (title: string) => {
+    // Classes para transição suave de cor junto com o grupo
+    const iconClass = "w-5 h-5 mr-3 transition-colors duration-500 group-hover:text-white text-brandBlack";
+    
+    if (title.toLowerCase().includes("design")) return <PenTool className={iconClass} />;
+    if (title.toLowerCase().includes("vídeo")) return <Video className={iconClass} />;
+    if (title.toLowerCase().includes("inteligência")) return <Bot className={iconClass} />;
+    
+    return null;
+  };
+
   return (
     <section id="section-skills" className="py-20 px-6 bg-brandWhite text-brandBlack scroll-mt-28">
       <div className="max-w-4xl mx-auto">
@@ -15,9 +28,14 @@ const Skills: React.FC = () => {
               key={index} 
               className="group flex flex-col h-full p-5 -mx-5 rounded-2xl transition-all duration-500 hover:bg-black hover:shadow-2xl cursor-default"
             >
-              <h4 className="text-sm font-extrabold uppercase mb-5 tracking-wide px-3 py-1.5 self-start transition-all duration-500 group-hover:text-white group-hover:bg-white/10 rounded-md">
-                {cat.title}
-              </h4>
+              {/* Container Título + Ícone */}
+              <div className="flex items-center mb-5 px-3 py-1.5 self-start rounded-md transition-all duration-500 group-hover:bg-white/10">
+                {getSkillIcon(cat.title)}
+                <h4 className="text-sm font-extrabold uppercase tracking-wide transition-colors duration-500 group-hover:text-white">
+                  {cat.title}
+                </h4>
+              </div>
+
               <ul className="space-y-3">
                 {cat.skills.map((skill, i) => (
                   <li 
