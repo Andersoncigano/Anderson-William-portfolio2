@@ -10,7 +10,9 @@ const Contact: React.FC = () => {
         <h3 className="text-xl font-bold uppercase tracking-tighter mb-10 bg-black text-white px-5 py-1.5 inline-block border-2 border-black transition-all duration-300 hover:bg-white hover:text-black hover:tracking-widest cursor-default">
           Vamos Conversar?
         </h3>
-        <p className="text-sm text-gray-600 mb-10 max-w-2xl mx-auto">
+        
+        {/* Adicionado hover com scale e mudança de cor suave */}
+        <p className="text-sm text-gray-600 mb-10 max-w-2xl mx-auto transition-all duration-300 transform hover:scale-105 hover:text-black cursor-default">
           Estou disponível para novos projetos e colaborações.
         </p>
 
