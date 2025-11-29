@@ -38,11 +38,12 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Content Column (Right on Desktop, Bottom on Mobile) */}
-      {/* Alteração: Reduzi o md:pl-12/lg:pl-20 para md:pl-4/lg:pl-10 para puxar o texto para a esquerda */}
-      <div className="w-full md:w-1/2 h-1/2 md:h-full flex items-center justify-start p-8 md:pl-4 lg:pl-10 bg-gray-50 relative">
+      {/* Alteração: Removido padding esquerdo no desktop (md:pl-0 lg:pl-0) para puxar o texto mais para a esquerda */}
+      <div className="w-full md:w-1/2 h-1/2 md:h-full flex items-center justify-start p-8 md:pl-0 lg:pl-0 bg-gray-50 relative">
         
         {/* Main Content Container - Aligned Left within the Right Column */}
-        <div className="w-full max-w-4xl relative text-left z-10">
+        {/* Adicionado md:-ml-4 para forçar ainda mais para a esquerda se necessário */}
+        <div className="w-full max-w-4xl relative text-left z-10 md:-ml-4 lg:-ml-8">
           
           {/* Name - Font Size Reduced Slightly */}
           <h1 className="text-5xl md:text-7xl lg:text-8xl text-brandBlack font-black leading-[0.85] mb-8 -ml-1 md:-ml-2">
