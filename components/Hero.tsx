@@ -3,7 +3,7 @@ import { PERSONAL_INFO } from '../constants';
 
 // --- ÁREA DE EDIÇÃO DA FOTO ---
 // Link direto fornecido pelo usuário
-const USER_IMAGE_URL = "https://i.ibb.co/zC8jtbr/sombra.png"; 
+const USER_IMAGE_URL = "https://i.ibb.co/fGzdkn9M/site-foto.png"; 
 // ------------------------------
 
 const Hero: React.FC = () => {

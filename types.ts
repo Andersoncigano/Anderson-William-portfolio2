@@ -27,6 +27,7 @@ export interface ProjectItem {
   title: string;
   category: string;
   imageUrl: string;
+  link?: string;
 }
 
 export interface ServiceItem {
